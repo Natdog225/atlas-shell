@@ -1,2 +1,0 @@
-# atlas-shell
-Second repository 
