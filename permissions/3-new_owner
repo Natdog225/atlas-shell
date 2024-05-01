@@ -1,4 +1,3 @@
 #!/bin/bash
-touch hello
-sudo adduser betty
+touch hello adduser betty
 
