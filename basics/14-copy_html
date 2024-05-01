@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u basics/*.HTML atlas-shell
+cp -u basics/*.html  atlas-shell
