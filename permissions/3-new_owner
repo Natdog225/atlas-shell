@@ -1,2 +1,2 @@
 #!/bin/bash
-touch hello && adduser betty &&
+adduser betty hello 
