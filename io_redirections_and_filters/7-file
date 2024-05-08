@@ -1,0 +1,5 @@
+#!/bin/bash
+filename="\\*\\\\'\"Best School\"'\\\\*$\\?\\*\\*\\*\\*\\*:)"
+touch "$filename"
+echo -e "Best School\n" > "$filename"
+
