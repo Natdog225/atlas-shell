@@ -7,9 +7,9 @@ while (( minute <= 59 )); do
 echo "$minute"
 (( minute++ ))
 if (( minute > 59 )); then
-       echo "hour:$hour"	
+       echo "hour:$hour"
+       (( hour++ ))       
 minute=1
-(( hour++ ))
 fi
 done
 minute=1
