@@ -4,9 +4,10 @@ hour=0
 minute=1
 while (( hour <= 12 )); do
 while (( minute <= 59 )); do
-echo "$hour:$minute"
+echo "$minute"
 (( minute++ ))
-if (( minute > 59 )); then 
+if (( minute > 59 )); then
+       echo "hour:$hour"	
 minute=1
 (( hour++ ))
 fi
