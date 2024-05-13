@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#This one also puts words on the screen, but happens to be using a different buzz word and a nifty counter
+counter=0
+while [ $counter -lt 10 ]; do
+echo "Best School"
+((counter++))
+done

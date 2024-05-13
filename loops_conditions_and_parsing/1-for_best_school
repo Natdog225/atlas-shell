@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-## shellcheck disable=SC2034
 #This loops two words which happen to be best school ten times
 for i in {1..10}
 do
