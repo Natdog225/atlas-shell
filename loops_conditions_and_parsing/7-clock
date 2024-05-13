@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#ITSTIMETOTELLTHETIME
+hour=0
+minute=1
+while (( hour <= 12 )); do
+while (( minute <= 59 )); do
+echo "$hour:$minute"
+(( minute++ ))
+if (( minute > 59 )); then 
+minute=1
+(( hour++ ))
+fi
+done
+minute=1
+done
+
