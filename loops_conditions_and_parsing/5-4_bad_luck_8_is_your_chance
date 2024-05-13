@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 #Just kinda copied it from the last one and added an elif statement
 counter=0
-while [$counter -lt 10 ]; do
-if [ $counter ==3 ]; then
+while [ $counter -lt 10 ]; do
+if [ $counter -eq 3 ]; then
 echo "bad luck"
-elif [ $counter ==7 ]; then
+elif [ $counter -eq 7 ]; then
 echo "good luck"
 else
 echo "Best School"
 fi
-[ counter++ ]
+((counter++))
 done
