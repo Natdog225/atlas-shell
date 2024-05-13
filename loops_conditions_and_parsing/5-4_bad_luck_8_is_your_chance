@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Just kinda copied it from the last one and added an elif statement
 counter=0
 while [ $counter -lt 10 ]; do
 if (($counter==3)); then
