@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#I will be the first to admit this is getting outta hand
 while IFS= read -r line; do
     # Split the line into fields
     IFS=':' read -ra fields <<< "$line"
