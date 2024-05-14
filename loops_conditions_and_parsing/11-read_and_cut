@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+while IFS= read -r line; do
+    # Split the line into fields
+    IFS=':' read -ra fields <<< "$line"
+    
+    # Extract username, UID, and home directory
+    username=${fields[0]}
+    uid=${fields[2]}
+    home_directory=${fields[6]}
+    
+    # Display the required information
+    echo "Username: $username"
+
+    echo "User ID: $uid"
+
+    echo "Home Directory: $home_directory"
+    
+    # Optional: Add a blank line between entries for better readability
+    echo
+done < /etc/passwd
