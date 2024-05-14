@@ -1,19 +1,9 @@
 #!/usr/bin/env bash
-#!/bin/bash
+# Tells a story based on the contents of the `/etc/passwd` file.
 
-# Set IFS to colon to split each line of /etc/passwd by colon
-IFS=':' read -r username password uid gid groups home shell < /etc/passwd
-
-echo "The user $username is part of the $groups gang, lives in $home and rides $shell."
-echo "USER ID's place is protected by the passcode $password, more info about the user here: UID $uid"
-
-# Use a while loop to iterate through the rest of the /etc/passwd file
-while IFS= read -r line; do
-    # Extract fields from the line
-    IFS=':' read -r username password uid gid groups home shell <<< "$line"
-    
-    # Display the formatted output
-    echo "The user $username is part of the $groups gang, lives in $home and rides $shell."
-    echo "USER ID's place is protected by the passcode $password, more info about the user here: UID $uid"
-done < /etc/passwd
-
+while IFS=':' read -r username password uid gid info home shell; do
+  echo "The user $username is part of the $gid gang,"\
+  "lives in $home and rides $shell."\
+  "$uid's place is protected by the passcode $password,"\
+  "more info about the user here: $info"
+done < "/etc/passwd"
