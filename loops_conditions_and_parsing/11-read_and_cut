@@ -2,14 +2,13 @@
 #I will be the first to admit this is getting outta hand
 while IFS= read -r line; do
     # Split the line into fields
-    IFS=':' read -ra fields <<< "$line"
+    IFS=':' read -ra fields <<< "$line" | cut -d: -f1,3,6;
     
     # Extract username, UID, and home directory
     username=${fields[0]}
     uid=${fields[2]}
     home_directory=${fields[6]}
     
-    cut -d: -f1,3,6;
     # Display the required information
     echo "Username: $username"
 
