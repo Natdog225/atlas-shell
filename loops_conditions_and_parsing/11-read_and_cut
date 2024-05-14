@@ -17,5 +17,5 @@ while IFS= read -r line; do
     echo "Home Directory: $home_directory"
     
     # Optional: Add a blank line between entries for better readability
-    echo
+    cut -d: -f1,3,6; 
 done < /etc/passwd
