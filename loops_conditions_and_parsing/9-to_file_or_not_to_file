@@ -1,4 +1,4 @@
-#!/usr/bin/env/bash
+#!/usr/bin/env bash
 #This script checks if a file named school exists and if its full or empty 
 if [ -e "school" ]
 then
