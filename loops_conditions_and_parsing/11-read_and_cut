@@ -9,6 +9,7 @@ while IFS= read -r line; do
     uid=${fields[2]}
     home_directory=${fields[6]}
     
+    cut -d: -f1,3,6;
     # Display the required information
     echo "Username: $username"
 
@@ -16,6 +17,5 @@ while IFS= read -r line; do
 
     echo "Home Directory: $home_directory"
     
-    # Optional: Add a blank line between entries for better readability
-    cut -d: -f1,3,6; 
+    # Optional: Add a blank line between entries for better readability 
 done < /etc/passwd
