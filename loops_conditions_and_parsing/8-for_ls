@@ -4,7 +4,7 @@ LIST=$(ls -1A)
 for file in $LIST
 do
     # Check if the file name contains a dash
-    if [[ $file == *-* ]] ; then
+    if [[ "$file" == *-* ]] ; then
         # Display the part of the name after the first dash
         echo "${file#*-}"
 else
