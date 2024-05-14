@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #This script checks if a file named school exists and if its full or empty
 file="school"
-if [ -f "$file" ]; then
+if [ -f -e "$file" ]; then
     # Check if the file is empty
     if [ -s "$file" ]; then
         echo "school file exists"
