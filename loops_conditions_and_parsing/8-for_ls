@@ -8,6 +8,6 @@ do
         # Display the part of the name after the first dash
         echo "${file#*-}"
 else
-       echo "$LIST"
+       echo "$file"
     fi
 done
