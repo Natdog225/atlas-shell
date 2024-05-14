@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Making things more complicated now
 counter=0
-while [ counter -lt 10 ]; do
-if (( counter==8 )); then
+while [ $counter -lt 10 ]; do
+if ((counter==8)); then
 echo "Best School"
 echo "Hi"
 else
