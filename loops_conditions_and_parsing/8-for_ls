@@ -4,6 +4,6 @@ for file in *; do
     # Check if the file name contains a dash
     if [[ $file == *-* ]]; then
         # Display the part of the name after the first dash
-        echo ${file#*-}
+        echo "${file#*-}"
     fi
 done
